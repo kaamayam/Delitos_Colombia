@@ -53,19 +53,6 @@ python 03_modelacion.py
 
 ---
 
-## Compatibilidad
-
-Los scripts están en formato **Databricks Notebook Source** (`# Databricks notebook source` + `# COMMAND ----------`), compatible con múltiples entornos:
-
-| Entorno | Cómo usarlo |
-|---------|-------------|
-| **Databricks** | Importar el `.py` directamente como notebook (File → Import) |
-| **VS Code** | Abrir el `.py` → las celdas `# COMMAND ----------` son reconocidas con la extensión Python |
-| **Anaconda / Spyder** | Ejecutar el archivo completo o por bloques con `# COMMAND ----------` como separador |
-| **Jupyter** | Convertir con `jupytext --to notebook 01_procesamiento.py` |
-
----
-
 ## Metodología — CRISP-DM
 
 ### 1. Comprensión del Negocio
@@ -95,12 +82,6 @@ Ver `02_eda.py` y `outputs/eda/graficos/`.
 - 16.869 registros municipio-mes (2020–2025)
 - Solo municipios con al menos 1 caso de extorsión registrado
 - División temporal: Train 2020–2023 / Test 2024–2025
-
-**Decisiones metodológicas**:
-- Sin variables lag (causaban VIF > 100)
-- Sin `cod_mun` (>1.046 categorías → maldición de la dimensionalidad)
-- `cod_dpto` incluido (33 categorías, captura efectos regionales)
-- Validación temporal (TimeSeriesSplit) para evitar data leakage
 
 ---
 
@@ -135,12 +116,3 @@ Instalar dependencias:
 ```bash
 pip install pandas numpy scikit-learn xgboost matplotlib seaborn scipy requests openpyxl
 ```
-
----
-
-## Documento Final
-
-El informe completo del TFM se encuentra en:
-`docs/plantilla_individual_ajustada_2.pdf`
-
-Cifras verificadas de referencia: `docs/CIFRAS_VERIFICADAS_SECCIONES_7_8.md`
