@@ -15,7 +15,6 @@ Delitos_Colombia/
 ├── datos/
 │   ├── silver/               ← 10 datasets individuales limpios
 │   └── gold/
-│       ├── consolidado_analitico.csv   (dataset completo 2015–2025)
 │       └── consolidado_modelado.csv    (dataset de modelado 2020–2025, 16.869 filas)
 │
 ├── outputs/
@@ -24,11 +23,7 @@ Delitos_Colombia/
 │       ├── figuras/          ← Ilustraciones 21–26 (PNG, 300 DPI)
 │       └── metricas/         ← comparacion_modelos.csv
 │
-├── docs/
-│   ├── plantilla_individual_ajustada_2.pdf   ← Documento final del TFM
-│
 ├── bases_de_origen/          ← Archivos fuente originales
-└── _archivo/                 ← Versiones anteriores archivadas
 ```
 
 ---
