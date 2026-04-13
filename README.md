@@ -1,7 +1,6 @@
 # Análisis y Predicción de la Extorsión en Colombia
-**TFM — Máster en Ciencia de Datos · Universidad Internacional de La Rioja**
 
-> ⚠️ **Nota sobre reproducibilidad**: Este proyecto consume datos en tiempo real desde APIs oficiales del Estado colombiano (datos.gov.co, DANE, UNODC). Los resultados numéricos (métricas del modelo, estadísticas descriptivas) pueden variar levemente entre ejecuciones a medida que las fuentes actualizan sus registros. Las métricas de referencia del documento final (`docs/plantilla_individual_ajustada_2.pdf`) corresponden al corte de datos de **noviembre 2025**. Una ejecución posterior reflejará datos más recientes y puede producir resultados ligeramente distintos — esto es una característica del diseño, no un defecto.
+> **Nota sobre reproducibilidad**: Este proyecto consume datos en tiempo real desde APIs oficiales del Estado colombiano (datos.gov.co, DANE, UNODC). Los resultados numéricos (métricas del modelo, estadísticas descriptivas) pueden variar levemente entre ejecuciones a medida que las fuentes actualizan sus registros.
 
 ---
 
